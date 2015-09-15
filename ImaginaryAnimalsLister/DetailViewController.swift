@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         if let animal = animal {
             self.nameLabel.text = animal.name
-            self.heightLabel.text = "(animal.height)"
+            self.heightLabel.text = "\(animal.height)"
             self.locationLabel.text = animal.location
             self.dateLastSeenLabel.text = animal.dateLastSeen
         }

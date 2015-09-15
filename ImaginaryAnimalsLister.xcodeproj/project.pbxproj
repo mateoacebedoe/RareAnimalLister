@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE6EB5D71BA89982004C1C09 /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = AE6EB5D61BA89982004C1C09 /* Animals.json */; };
 		C00198CE1BA7780600C97F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198CD1BA7780600C97F18 /* AppDelegate.swift */; };
 		C00198D31BA7780600C97F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00198D11BA7780600C97F18 /* Main.storyboard */; };
 		C00198D51BA7780600C97F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00198D41BA7780600C97F18 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE6EB5D61BA89982004C1C09 /* Animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
 		C00198CA1BA7780600C97F18 /* ImaginaryAnimalsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginaryAnimalsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00198CD1BA7780600C97F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C00198D21BA7780600C97F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		C00198CC1BA7780600C97F18 /* ImaginaryAnimalsLister */ = {
 			isa = PBXGroup;
 			children = (
+				AE6EB5D61BA89982004C1C09 /* Animals.json */,
 				C00198CD1BA7780600C97F18 /* AppDelegate.swift */,
 				C00198EF1BA7804000C97F18 /* ImaginaryAnimal.swift */,
 				C00198ED1BA7794A00C97F18 /* TableViewController.swift */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00198D81BA7780600C97F18 /* LaunchScreen.storyboard in Resources */,
+				AE6EB5D71BA89982004C1C09 /* Animals.json in Resources */,
 				C00198D51BA7780600C97F18 /* Assets.xcassets in Resources */,
 				C00198D31BA7780600C97F18 /* Main.storyboard in Resources */,
 			);
