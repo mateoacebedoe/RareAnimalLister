@@ -19,9 +19,19 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let url = animal?.imageURL,
-            let imageData = NSData(contentsOfURL: url) {
-                self.imageView.image = UIImage(data: imageData)
+        if let animal = animal {
+            self.nameLabel.text = animal.name
+            self.heightLabel.text = "(animal.height)"
+            self.locationLabel.text = animal.location
+            self.dateLastSeenLabel.text = animal.dateLastSeen
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let url = animal?.imageURL, let imageData = NSData(contentsOfURL: url) {
+            self.imageView.image = UIImage(data: imageData)
         }
     }
 }
