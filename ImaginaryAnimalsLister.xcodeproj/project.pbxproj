@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C00198CE1BA7780600C97F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198CD1BA7780600C97F18 /* AppDelegate.swift */; };
-		C00198D01BA7780600C97F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198CF1BA7780600C97F18 /* ViewController.swift */; };
 		C00198D31BA7780600C97F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00198D11BA7780600C97F18 /* Main.storyboard */; };
 		C00198D51BA7780600C97F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00198D41BA7780600C97F18 /* Assets.xcassets */; };
 		C00198D81BA7780600C97F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00198D61BA7780600C97F18 /* LaunchScreen.storyboard */; };
 		C00198E31BA7780600C97F18 /* ImaginaryAnimalsListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198E21BA7780600C97F18 /* ImaginaryAnimalsListerTests.swift */; };
+		C00198EE1BA7794A00C97F18 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198ED1BA7794A00C97F18 /* TableViewController.swift */; };
+		C00198F01BA7804000C97F18 /* ImaginaryAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198EF1BA7804000C97F18 /* ImaginaryAnimal.swift */; };
+		C00198F21BA7882500C97F18 /* AnimalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198F11BA7882500C97F18 /* AnimalsLoader.swift */; };
+		C00198F41BA78B4900C97F18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00198F31BA78B4900C97F18 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		C00198CA1BA7780600C97F18 /* ImaginaryAnimalsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginaryAnimalsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00198CD1BA7780600C97F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C00198CF1BA7780600C97F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C00198D21BA7780600C97F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C00198D41BA7780600C97F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C00198D71BA7780600C97F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		C00198DE1BA7780600C97F18 /* ImaginaryAnimalsListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginaryAnimalsListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00198E21BA7780600C97F18 /* ImaginaryAnimalsListerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimalsListerTests.swift; sourceTree = "<group>"; };
 		C00198E41BA7780600C97F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00198ED1BA7794A00C97F18 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C00198EF1BA7804000C97F18 /* ImaginaryAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimal.swift; sourceTree = "<group>"; };
+		C00198F11BA7882500C97F18 /* AnimalsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsLoader.swift; sourceTree = "<group>"; };
+		C00198F31BA78B4900C97F18 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				C00198CD1BA7780600C97F18 /* AppDelegate.swift */,
-				C00198CF1BA7780600C97F18 /* ViewController.swift */,
+				C00198EF1BA7804000C97F18 /* ImaginaryAnimal.swift */,
+				C00198ED1BA7794A00C97F18 /* TableViewController.swift */,
+				C00198F31BA78B4900C97F18 /* DetailViewController.swift */,
+				C00198F11BA7882500C97F18 /* AnimalsLoader.swift */,
 				C00198D11BA7780600C97F18 /* Main.storyboard */,
 				C00198D41BA7780600C97F18 /* Assets.xcassets */,
 				C00198D61BA7780600C97F18 /* LaunchScreen.storyboard */,
@@ -140,6 +149,7 @@
 		C00198C21BA7780600C97F18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Charlie Williams";
 				TargetAttributes = {
@@ -196,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00198D01BA7780600C97F18 /* ViewController.swift in Sources */,
 				C00198CE1BA7780600C97F18 /* AppDelegate.swift in Sources */,
+				C00198EE1BA7794A00C97F18 /* TableViewController.swift in Sources */,
+				C00198F41BA78B4900C97F18 /* DetailViewController.swift in Sources */,
+				C00198F21BA7882500C97F18 /* AnimalsLoader.swift in Sources */,
+				C00198F01BA7804000C97F18 /* ImaginaryAnimal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +398,7 @@
 				C00198E91BA7780600C97F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C00198EA1BA7780600C97F18 /* Build configuration list for PBXNativeTarget "ImaginaryAnimalsListerTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +407,7 @@
 				C00198EC1BA7780600C97F18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
