@@ -24,14 +24,21 @@ class DetailViewController: UIViewController {
             self.heightLabel.text = "\(animal.height)"
             self.locationLabel.text = animal.location
             self.dateLastSeenLabel.text = animal.dateLastSeen
+            
+            loadImage()
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    func loadImage() -> Void {
+        let queue = dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
         
-        if let url = animal?.imageURL, let imageData = NSData(contentsOfURL: url) {
-            self.imageView.image = UIImage(data: imageData)
-        }
+        dispatch_async(queue, { [weak self] in
+            
+            if let url = self?.animal?.imageURL,
+                imageData = NSData(contentsOfURL: url) {
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self?.imageView.image = UIImage(data:imageData)})
+            }
+        })
     }
 }
